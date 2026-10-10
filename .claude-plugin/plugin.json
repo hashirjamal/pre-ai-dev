@@ -1,0 +1,5 @@
+{
+  "name": "dev-skills",
+  "version": "0.1.0",
+  "description": "Build, refactor and debug skills with clean code rules, short reports, a review gate and atomic commits."
+}
