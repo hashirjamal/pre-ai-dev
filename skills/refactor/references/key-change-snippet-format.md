@@ -75,7 +75,7 @@ Do not fix a bug inside a refactor. Use this format for each bug.
 ```ts
 <maximum 8 lines>
 ```
-**Next step:** Use `dev-debug` to confirm the cause and apply the fix.
+**Next step:** Use `pre-ai-dev:debug` to confirm the cause and apply the fix.
 ````
 
 Rules:
@@ -180,5 +180,5 @@ export async function cancelOrder(orderId: string) {
   return orderRepository.findById(orderId);
 }
 ```
-**Next step:** Use `dev-debug` to confirm the cause and apply the fix.
+**Next step:** Use `pre-ai-dev:debug` to confirm the cause and apply the fix.
 ````

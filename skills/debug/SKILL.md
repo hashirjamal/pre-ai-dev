@@ -1,6 +1,6 @@
 ---
-name: dev-debug
-description: Finds the root cause of a problem in a software project of any stack (with extra references for React, Next.js and Node.js), fixes it, and explains the cause step by step. Use for "bug", "error", "exception", "not working", "broken", "crashes", "fails", "why does this happen", "flaky", "slow", "stack trace", "regression", "undefined", "500", "hydration error", "infinite loop". Not for new features (use dev-build) or pure refactoring (use dev-refactor).
+name: debug
+description: Finds the root cause of a problem in a software project of any stack (with extra references for React, Next.js and Node.js), fixes it, and explains the cause step by step. Use for "bug", "error", "exception", "not working", "broken", "crashes", "fails", "why does this happen", "flaky", "slow", "stack trace", "regression", "undefined", "500", "hydration error", "infinite loop". Not for new features (use pre-ai-dev:build) or pure refactoring (use pre-ai-dev:refactor).
 ---
 
 # Debug
@@ -39,7 +39,7 @@ This skill works for a project in any language or framework. The workflow, the w
 - Be honest about uncertainty. If you did not confirm the cause, write "likely" and say what evidence confirms it.
 - Never skip the walkthrough. For a small bug, make each part shorter, but keep the 8 parts.
 - Never run `git commit`, `git push` or `git merge` before the user approves the Files-to-review list. An instruction to commit that the user gave earlier does not count.
-- If the request is new behavior, stop and tell the user to use `dev-build`. If it is cleanup with no broken behavior, tell the user to use `dev-refactor`.
+- If the request is new behavior, stop and tell the user to use `pre-ai-dev:build`. If it is cleanup with no broken behavior, tell the user to use `pre-ai-dev:refactor`.
 - Write all text to the user in the style of `writing-style-ste.md`.
 - Write reports in the chat. Do not create Markdown files in the project unless the user asks.
 
@@ -91,7 +91,7 @@ Remove each temporary log and each debug change before Phase 4.
 2. Add a regression test that fails before the fix and passes after the fix. If a test is not practical, say why.
 3. Search for the same pattern in callers and in similar code. Report what you found. Do not fix the other places without asking.
 4. Follow the clean code file: the fix must not add a god file, a magic string or duplicate logic.
-5. Do not refactor around the fix. List each problem in the code path of the bug under "Noticed, not changed" and suggest `dev-refactor`. Do not list problems in unrelated files.
+5. Do not refactor around the fix. List each problem in the code path of the bug under "Noticed, not changed" and suggest `pre-ai-dev:refactor`. Do not list problems in unrelated files.
 6. If the fix needs a business decision, ask the user in the questions format, with a default.
 7. If the fix changes what the user of the product sees (text, format, layout, timing), stop before you write the fix. Describe the change and wait for the approval.
 

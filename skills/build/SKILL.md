@@ -1,6 +1,6 @@
 ---
-name: dev-build
-description: Implements a new feature, endpoint, page, component or integration in a software project of any stack (with extra references for React, Next.js and Node.js). Use when the user says "add", "build", "implement", "create a feature", "new endpoint", "new page" or "integrate". Not for bug fixing (use dev-debug) and not for pure refactoring with no behavior change (use dev-refactor).
+name: build
+description: Implements a new feature, endpoint, page, component or integration in a software project of any stack (with extra references for React, Next.js and Node.js). Use when the user says "add", "build", "implement", "create a feature", "new endpoint", "new page" or "integrate". Not for bug fixing (use pre-ai-dev:debug) and not for pure refactoring with no behavior change (use pre-ai-dev:refactor).
 ---
 
 # Build
@@ -35,8 +35,8 @@ This skill works for a project in any language or framework. The workflow, the r
 - Write no code before Phase 1 and Phase 2 are complete.
 - Never run `git commit`, `git push` or `git merge` before the user approves the Files-to-review list. An instruction to commit that the user gave earlier does not count.
 - Do not refactor code that the task does not need to touch. List each nearby problem under "Noticed, not changed".
-- If the request is a broken behavior, stop. Tell the user to use `dev-debug`.
-- If the feature needs a bug fix or a large refactor first, stop. Tell the user what you found and suggest `dev-debug` or `dev-refactor`.
+- If the request is a broken behavior, stop. Tell the user to use `pre-ai-dev:debug`.
+- If the feature needs a bug fix or a large refactor first, stop. Tell the user what you found and suggest `pre-ai-dev:debug` or `pre-ai-dev:refactor`.
 - Write all text to the user in the style of `writing-style-ste.md`.
 - Write reports in the chat. Do not create Markdown files in the project unless the user asks.
 

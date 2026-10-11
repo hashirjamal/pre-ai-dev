@@ -1,6 +1,6 @@
 ---
-name: dev-refactor
-description: Restructures or cleans up existing code of any stack (with extra references for React, Next.js and Node.js) with no behavior change. Use when the user says "refactor", "clean up", "split this file", "too big", "god component", "extract", "remove duplication", "move logic out of the route" or "make this maintainable". Not for adding features (use dev-build) and not for fixing bugs (use dev-debug).
+name: refactor
+description: Restructures or cleans up existing code of any stack (with extra references for React, Next.js and Node.js) with no behavior change. Use when the user says "refactor", "clean up", "split this file", "too big", "god component", "extract", "remove duplication", "move logic out of the route" or "make this maintainable". Not for adding features (use pre-ai-dev:build) and not for fixing bugs (use pre-ai-dev:debug).
 ---
 
 # Refactor
@@ -38,8 +38,8 @@ This skill works for a project in any language or framework. The workflow, the r
 - Small steps that the user can revert. No rewrite of a full area in one step.
 - Never fix a bug inside a refactor. Report it under "Bugs noticed" with a snippet.
 - Never run `git commit`, `git push` or `git merge` before the user approves the Files-to-review list. An instruction to commit that the user gave earlier does not count.
-- If the request also asks for new behavior (a new field, a new rule, a new endpoint), separate the 2 parts. Do the refactor here. Tell the user to use `dev-build` for the new behavior after the refactor.
-- If the request is a broken behavior, stop. Tell the user to use `dev-debug`.
+- If the request also asks for new behavior (a new field, a new rule, a new endpoint), separate the 2 parts. Do the refactor here. Tell the user to use `pre-ai-dev:build` for the new behavior after the refactor.
+- If the request is a broken behavior, stop. Tell the user to use `pre-ai-dev:debug`.
 - Write all text to the user in the style of `writing-style-ste.md`.
 - Write reports in the chat. Do not create Markdown files in the project unless the user asks.
 
