@@ -1,5 +1,18 @@
 {
-  "name": "dev-skills",
+  "name": "pre-ai-dev",
+  "displayName": "Pre-AI Dev",
   "version": "0.1.0",
-  "description": "Build, refactor and debug skills with clean code rules, short reports, a review gate and atomic commits."
+  "description": "Build, refactor and debug skills with clean code rules, short reports, a review gate and atomic commits.",
+  "author": {
+    "name": "Hashir Jamal Khan"
+  },
+  "keywords": ["build", "refactor", "debug", "clean-code", "code-review", "atomic-commits"],
+  "userConfig": {
+    "commit_gate": {
+      "type": "boolean",
+      "title": "Commit gate",
+      "description": "Ask for your confirmation before each git commit, git push and git merge that Claude runs.",
+      "default": true
+    }
+  }
 }

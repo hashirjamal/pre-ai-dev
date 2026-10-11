@@ -1,0 +1,14 @@
+{
+  "name": "pre-ai-dev-marketplace",
+  "description": "Personal development skills for Claude Code",
+  "owner": {
+    "name": "Hashir Jamal Khan"
+  },
+  "plugins": [
+    {
+      "name": "pre-ai-dev",
+      "source": "./",
+      "description": "Build, refactor and debug skills with clean code rules, short reports, a review gate and atomic commits."
+    }
+  ]
+}
