@@ -1,6 +1,6 @@
 ---
 name: dev-refactor
-description: Restructures or cleans up existing React, Next.js or Node.js code with no behavior change. Use when the user says "refactor", "clean up", "split this file", "too big", "god component", "extract", "remove duplication", "move logic out of the route" or "make this maintainable". Not for adding features (use dev-build) and not for fixing bugs (use dev-debug).
+description: Restructures or cleans up existing code of any stack (with extra references for React, Next.js and Node.js) with no behavior change. Use when the user says "refactor", "clean up", "split this file", "too big", "god component", "extract", "remove duplication", "move logic out of the route" or "make this maintainable". Not for adding features (use dev-build) and not for fixing bugs (use dev-debug).
 ---
 
 # Refactor
@@ -19,6 +19,16 @@ Read each file completely at the given time.
 | [references/report-templates.md](references/report-templates.md) | Before Phase 3 |
 | [references/review-and-commit-protocol.md](references/review-and-commit-protocol.md) | Before Phase 3 |
 | [references/key-change-snippet-format.md](references/key-change-snippet-format.md) | Before Phase 4 |
+
+## Other stacks
+
+This skill works for a project in any language or framework. The workflow, the report and the gate are the same for each stack.
+
+- `clean-code-react-next-node.md` and `refactoring-catalog.md` are written for React, Next.js and Node.js. They are aids, not limits.
+- If the project uses a different stack, do the work. Do not stop and do not refuse because the stack is not in a reference file.
+- From the clean code file, use the general rules (single responsibility, single source of truth, constants, types, naming, layers, tests) and the "Follow the project" section. Ignore the rules for a framework that the project does not use.
+- From the catalog, use the "General" moves and the "Smells to ignore" list. The Node.js moves for layers (service, repository, config, typed errors) apply to each back end. Use the standard refactoring moves of the stack of the project for the rest.
+- Follow the conventions, the tools and the test framework of the project.
 
 ## Hard rules
 
@@ -47,7 +57,7 @@ Read each file completely at the given time.
 2. Run typecheck, lint and tests. Record the result as the baseline.
 3. If the baseline is red, tell the user before you continue.
 4. If the scope has no tests, propose small characterization tests (tests that lock the current behavior). Write them before the refactor, as their own commit.
-5. If tests are not possible, tell the user the risk plainly. List the manual checks. Wait for the user to agree.
+5. If tests are not possible, tell the user the risk plainly and list the manual checks. Do not stop here. Continue to Phase 2 and Phase 3, and send the risk, the manual checks and the plan in 1 reply. The approval of the plan is also the agreement to the manual checks.
 
 ### Phase 2: Diagnose
 
