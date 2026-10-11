@@ -71,8 +71,7 @@ No behavior change. Prepares the refund feature.
 
 Make a commit plan when one of these is true:
 
-- The task crosses more than 1 layer.
-- The task has more than about 200 changed lines.
+- The task crosses more than 1 layer and has more than about 200 changed lines.
 - The task has more than 1 separate behavior.
 
 A small task gets 1 commit.
