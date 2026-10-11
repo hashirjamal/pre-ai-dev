@@ -1,6 +1,6 @@
 ---
 name: dev-build
-description: Implements a new feature, endpoint, page, component or integration in a React, Next.js or Node.js project. Use when the user says "add", "build", "implement", "create a feature", "new endpoint", "new page" or "integrate". Not for bug fixing (use dev-debug) and not for pure refactoring with no behavior change (use dev-refactor).
+description: Implements a new feature, endpoint, page, component or integration in a software project of any stack (with extra references for React, Next.js and Node.js). Use when the user says "add", "build", "implement", "create a feature", "new endpoint", "new page" or "integrate". Not for bug fixing (use dev-debug) and not for pure refactoring with no behavior change (use dev-refactor).
 ---
 
 # Build
@@ -18,6 +18,17 @@ Read each file completely at the given time.
 | [references/build-checklists.md](references/build-checklists.md) | Before Phase 1 |
 | [references/report-templates.md](references/report-templates.md) | Before Phase 1 |
 | [references/review-and-commit-protocol.md](references/review-and-commit-protocol.md) | Before Phase 3 |
+
+## Other stacks
+
+This skill works for a project in any language or framework. The workflow, the report and the gate are the same for each stack.
+
+- `clean-code-react-next-node.md` is written for React, Next.js and Node.js. It is an aid, not a limit.
+- If the project uses a different stack, do the work. Do not stop and do not refuse because the stack is not in a reference file.
+- From the clean code file, use the general rules (single responsibility, single source of truth, constants, types, naming, layers, tests, security) and the "Follow the project" section. Ignore the rules for a framework that the project does not use.
+- Apply the best practices of the stack of the project from your own knowledge, with the same strictness.
+- The 2 checklists in `build-checklists.md` apply to each stack. Skip the items that do not apply.
+- Follow the conventions, the tools and the test framework of the project.
 
 ## Hard rules
 
