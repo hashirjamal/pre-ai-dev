@@ -32,6 +32,9 @@ Write this report at the end of each task.
 ## Not checked / risks
 <1 to 2 lines. Checks that did not run, paths that I did not test, known risks.>
 
+## Noticed, not changed
+- <A problem near the change that I did not fix: file, problem, 1 line.>
+
 ## Checks
 - Typecheck: <pass | fail | not run: reason>
 - Lint: <pass | fail | not run: reason>

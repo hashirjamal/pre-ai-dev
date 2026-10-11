@@ -33,9 +33,10 @@
 
 A large change meets one of the thresholds in "When to make a commit plan".
 
-- Before you commit a large change, remind the user 1 time: "This is a large change. Did you read the files in the order above? Reply 'approved' to commit."
-- Remind 1 time for each gate. Do not ask again after the user confirms.
+- For a large change, write this gate line in place of the standard line: "This is a large change. Read the files in the order above. Reply 'approved' only after you read them."
+- This line is the 1 reminder for that gate. Do not ask again after the user approves.
 - Do not quiz the user about the code.
+- If the user tells you to commit before you show the Files-to-review list, do not commit. Show the list and the gate line first.
 
 ## Atomic commit rules
 
@@ -70,7 +71,6 @@ No behavior change. Prepares the refund feature.
 
 Make a commit plan when one of these is true:
 
-- The task changes more than about 5 files.
 - The task crosses more than 1 layer.
 - The task has more than about 200 changed lines.
 - The task has more than 1 separate behavior.
@@ -103,7 +103,7 @@ The user can say "approve all remaining". Then do not pause between the remainin
 ## Scope rules
 
 - Never add an unrelated change to a slice.
-- If you find an unrelated problem, report it in "Not checked / risks". Do not fix it in the slice.
+- If you find an unrelated problem, report it in "Noticed, not changed". Do not fix it in the slice.
 - Stage files by name. Do not use `git add -A` or `git add .`.
 - Do not create Markdown files (reports, plans, notes, changelogs) in the project unless the user asks for them. Reports go in the chat.
 - Never use `--no-verify`, `--amend` on a commit that the user approved, or a force push, unless the user tells you to.
