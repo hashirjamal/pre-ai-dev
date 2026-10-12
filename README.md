@@ -36,17 +36,16 @@ As a plugin, the skills have the plugin name as a prefix: `/pre-ai-dev:build`, `
 
 This repository is a plugin and also its own marketplace. The marketplace name is `pre-ai-dev-marketplace`.
 
-**From GitHub** (replace `<owner>/<repo>` with the path of this repository):
 
 ```text
-/plugin marketplace add <owner>/<repo>
+/plugin marketplace add hashirjamal/pre-ai-dev
 /plugin install pre-ai-dev@pre-ai-dev-marketplace
 ```
 
 The same in a shell:
 
 ```bash
-claude plugin marketplace add <owner>/<repo>
+claude plugin marketplace add hashirjamal/pre-ai-dev
 claude plugin install pre-ai-dev@pre-ai-dev-marketplace
 ```
 
